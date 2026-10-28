@@ -66,12 +66,3 @@ d=df["petal_ratio"] = df["petal_length"] / df["petal_width"]
 print(d)
 e= df.groupby("species")["petal_ratio"].mean()
 print(e)'''
-
-import pandas as pd
-import os 
-import kagglehub
-
-path = kagglehub.dataset_download("yasserh/titanic-dataset")
-
-print("Path to dataset files:", path)
-df = pd.read_csv(os.path.join(path, "IRIS.csv"))
